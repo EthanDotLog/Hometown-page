@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     text-align: center;
     background: linear-gradient(rgb(47, 47, 223), rgb(77, 10, 10));
-    text-shadow: 2px 2px 4px rgb(116, 10, 10);
+    text-shadow: 2px 2px 4px hsl(0, 84%, 25%);
     color: rgb(231, 219, 196);
 }
 
@@ -51,7 +51,7 @@ body {
 #img-block-container {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    margin: 10px 5px;
 }
 
 .img-block {
@@ -60,8 +60,10 @@ body {
     align-items: center;
     width: 28%;
     padding: 40px 20px;
+    margin: 50px 0 50px 0;
     box-shadow: 0 0 6px red, inset 0 0 8px red;
     border: 2px solid rgb(231, 219, 196);
+    background: rgba(11, 2, 17, 0.3);
 }
 #img1 {
     height: 200px;
@@ -103,17 +105,18 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
 }
 
 #author-block {
     display: flex;
     align-items: center;
     width: 600px;
-    margin: 75px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 10px;
     border: 4px solid rgb(231, 219, 196);
     box-shadow: 0 0 6px red, inset 0 0 8px red;
-    
+    background: rgba(11, 2, 17, 0.3);
 }
 #author-info {
     display: flex;
@@ -122,15 +125,37 @@ body {
     font-size: x-small;
 }
 #author-img {
-    width: 50%;
+    width: 48%;
 }
 #author-info p {
     width: 80%;
-    margin: 15px 0;
+    margin: 10px 0;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #footer {
+    margin: 50px 0 20px 0;
     color: rgb(231, 219, 196);
 }
 a {
     color: blue;
 }
+
+@media only screen and (max-width: 576px) {
+    #img-block-container {
+        display: block;
+    }
+    .img-block {
+        width: 320px;
+        margin: 30px auto;
+    }
+    #author-block {
+        display: block;
+        width: 320px;
+        margin: 5px auto;
+    }
+    #hero h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
